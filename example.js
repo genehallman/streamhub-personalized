@@ -12,26 +12,26 @@ define(function(require) {
             network: "labs-t402.fyre.co",
             environment: "t402.livefyre.com",
             siteId: "303827",
-            articleId: 'sh_col_51_1366914813',
-            title: 'Awesome Conv 1'
+            articleId: 'labs_demo_basketball',
+            title: 'Basketball'
         },{
             network: "labs-t402.fyre.co",
             environment: "t402.livefyre.com",
             siteId: "303827",
-            articleId: 'labs_demo_fire',
-            title: 'Fire Demo'
+            articleId: 'labs_demo_football',
+            title: 'Football'
         },{
             network: "labs-t402.fyre.co",
             environment: "t402.livefyre.com",
             siteId: "303827",
             articleId: 'labs_demo_social_baseball',
-            title: 'Social Baseball'
+            title: 'Baseball'
         },{
             network: "labs-t402.fyre.co",
             environment: "t402.livefyre.com",
             siteId: "303827",
-            articleId: 'sh_col_54_1367887407',
-            title: 'Awesome Conv 2'
+            articleId: 'labs_demo_soccer',
+            title: 'Soccer'
         }];
         
         var token = "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJkb21haW4iOiAibGFicy10NDAyLmZ5cmUuY28iLCAiZXhwaXJlcyI6IDEzNzYxODM1MTUuNDM4MDgxLCAidXNlcl9pZCI6ICJzeXN0ZW0ifQ.Rhp_U8ryx2KWmPgHBxzAktSjOJ-DHmJo9BE-SPQdg84";
@@ -80,7 +80,7 @@ define(function(require) {
             token = token || (((authData || {}).data || {}).token || {}).value;
         
 	        for (var i = 0; i < streamOpts.length; i++) {
-	            var holder = $('<div></div>').text(streamOpts[i].title + " ("+streamOpts[i].articleId+")");
+	            var holder = $('<div></div>').text(streamOpts[i].title);
 	                
 	            var link = $('<a>Follow</a>')
 	                .addClass('follow')
