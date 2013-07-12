@@ -35,7 +35,7 @@ define(function(require) {
         }];
         
         var token = "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJkb21haW4iOiAibGFicy10NDAyLmZ5cmUuY28iLCAiZXhwaXJlcyI6IDEzNzYxODM1MTUuNDM4MDgxLCAidXNlcl9pZCI6ICJzeXN0ZW0ifQ.Rhp_U8ryx2KWmPgHBxzAktSjOJ-DHmJo9BE-SPQdg84";
-        var profileId = "";
+        var profileId = "system@labs-t402.fyre.co";
         var view = new View({el: el});
         var viewWrapper = {};
         viewWrapper.add = function(content, stream) {
@@ -76,7 +76,7 @@ define(function(require) {
         };
         
         LivefyreAuthClient.getAuthData(streamOpts[0], function(authErr, authData) {
-            profileId = (((authData || {}).data || {}).profile || {}).id;
+            profileId = profileId || (((authData || {}).data || {}).profile || {}).id;
             token = token || (((authData || {}).data || {}).token || {}).value;
         
 	        for (var i = 0; i < streamOpts.length; i++) {
