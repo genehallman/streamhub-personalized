@@ -34,7 +34,7 @@ define(function(require) {
             title: 'Awesome Conv 2'
         }];
         
-        var token = "";
+        var token = "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJkb21haW4iOiAibGFicy10NDAyLmZ5cmUuY28iLCAiZXhwaXJlcyI6IDEzNzYxODM1MTUuNDM4MDgxLCAidXNlcl9pZCI6ICJzeXN0ZW0ifQ.Rhp_U8ryx2KWmPgHBxzAktSjOJ-DHmJo9BE-SPQdg84";
         var profileId = "";
         var view = new View({el: el});
         var viewWrapper = {};
@@ -77,7 +77,7 @@ define(function(require) {
         
         LivefyreAuthClient.getAuthData(streamOpts[0], function(authErr, authData) {
             profileId = (((authData || {}).data || {}).profile || {}).id;
-            token = (((authData || {}).data || {}).token || {}).value;
+            token = token || (((authData || {}).data || {}).token || {}).value;
         
 	        for (var i = 0; i < streamOpts.length; i++) {
 	            var holder = $('<div></div>').text(streamOpts[i].title + " ("+streamOpts[i].articleId+")");
