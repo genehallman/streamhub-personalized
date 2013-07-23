@@ -9,33 +9,29 @@ define(function(require) {
 
     return function(el) {
         var streamOpts = [{
-            network: "labs-t402.fyre.co",
-            environment: "t402.livefyre.com",
-            siteId: "303827",
+            network: "labs.fyre.co",
+            siteId: "315833",
             articleId: 'labs_demo_basketball',
             title: 'Basketball'
         },{
-            network: "labs-t402.fyre.co",
-            environment: "t402.livefyre.com",
-            siteId: "303827",
+            network: "labs.fyre.co",
+            siteId: "315833",
             articleId: 'labs_demo_football',
             title: 'Football'
         },{
-            network: "labs-t402.fyre.co",
-            environment: "t402.livefyre.com",
-            siteId: "303827",
+            network: "labs.fyre.co",
+            siteId: "315833",
             articleId: 'labs_demo_social_baseball',
             title: 'Baseball'
         },{
-            network: "labs-t402.fyre.co",
-            environment: "t402.livefyre.com",
-            siteId: "303827",
+            network: "labs.fyre.co",
+            siteId: "315833",
             articleId: 'labs_demo_soccer',
             title: 'Soccer'
         }];
         
-        var token = "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJkb21haW4iOiAibGFicy10NDAyLmZ5cmUuY28iLCAiZXhwaXJlcyI6IDEzNzYxODM1MTUuNDM4MDgxLCAidXNlcl9pZCI6ICJzeXN0ZW0ifQ.Rhp_U8ryx2KWmPgHBxzAktSjOJ-DHmJo9BE-SPQdg84";
-        var profileId = "system@labs-t402.fyre.co";
+        var token = "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJkb21haW4iOiAibGFicy5meXJlLmNvIiwgImV4cGlyZXMiOiAxMzc3MjE0MzkxLjIyMDY5LCAidXNlcl9pZCI6ICJzeXN0ZW0ifQ.E2NHoRvIPVxXdIPRJkqEby9ulLuyIwODTJyqnEriN1k";
+        var profileId = "system@labs.fyre.co";
         var view = new View({el: el});
         var viewWrapper = {};
         viewWrapper.add = function(content, stream) {
