@@ -21,7 +21,7 @@ define(function(require) {
         },{
             network: "labs.fyre.co",
             siteId: "315833",
-            articleId: 'labs_demo_social_baseball',
+            articleId: 'labs_demo_baseball',
             title: 'Baseball'
         },{
             network: "labs.fyre.co",
